@@ -926,6 +926,103 @@ body.jazzmin-login-page {
     width: 100%;
 }
 
+/* Overall container of the Select2 component */
+.select2-container {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important; /* Full width */
+}
+
+/* Style for the selected items (pills) */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #ffffff !important; /* Blue background */
+    border: 2px solid #75797c !important; /* Blue border */
+    border-radius: 15px !important; /* Rounded edges for pill effect */
+    color: #000000 !important; /* White text */
+    padding: 1px 10px !important; /* Some padding */
+    margin-top: 10px !important;
+    margin-right: 5px !important;
+    cursor: default !important;
+    padding-left: 30px !important;
+}
+
+/* Style for the search field within the Select2 component */
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field {
+    border-radius: 4px !important; /* Slightly rounded borders for the input field */
+    padding: 5px !important;
+    outline: none !important; /* Removes the default focus outline */
+    box-shadow: none !important; /* Removes any box-shadow */
+    display: none;
+}
+
+/* Style for the remove icon within the pills */
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #ff0000 !important; /* White text color for 'x' button */
+    cursor: pointer !important;
+    margin-top: 1px !important;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+}
+
+/* Adjustments for the dropdown container */
+.select2-container--default .select2-dropdown {
+    border: 1px solid #ddd !important; /* Gray border for dropdown */
+    border-radius: 4px !important; /* Slightly rounded borders for dropdown */
+    padding: 5px !important;
+}
+
+/* Style for individual dropdown options */
+.select2-container--default .select2-results__option {
+    padding: 6px !important; /* Padding for dropdown options */
+    user-select: none !important; /* Disable text selection */
+    -moz-user-select: none !important;
+    -webkit-user-select: none !important;
+}
+
+/* Style for the search field within the dropdown */
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    margin: 0 !important;
+    padding: 5px !important;
+}
+
+/* Style for highlighted option in dropdown */
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #75797c !important; /* Blue background for highlighted option */
+    color: #fff !important; /* White text for highlighted option */
+}
+
+/* Style for the selected option in dropdown */
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #ddd !important; /* Light background for selected option */
+    color: #574c49 !important; /* Dark text for selected option */
+}
+
+.select2-container--admin-autocomplete .select2-results__option[aria-selected=true] {
+    background-color: #ddd !important; /* Light background for selected option */
+    color: #574c49 !important; /* Dark text for selected option */
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-top: 10px !important;
+    margin-right: 10px;
+    padding: 1px;
+    color: #ff0000 !important;
+}
+
+.select2-dropdown {
+    background-color: white;
+    border: 1px solid #ddd !important;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    z-index: 1051;
+}
+
 button, input, optgroup, select, textarea {
     margin: 0 auto;
     font-family: inherit;
@@ -933,7 +1030,7 @@ button, input, optgroup, select, textarea {
     line-height: inherit
 }
 
-.app-menu {
-	left: -300px;
-	transition: left 300ms linear;
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid black 3px !important;
+    outline: 0;
 }
