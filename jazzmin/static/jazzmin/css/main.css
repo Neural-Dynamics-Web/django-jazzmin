@@ -993,12 +993,12 @@ body.jazzmin-login-page {
 }
 
 /* Style for the selected option in dropdown */
-.select2-container--default .select2-results__option[aria-selected=true] {
+.select2-container--admin-autocomplete .select2-results__option--highlighted[aria-selected=true] .select2-container--default .select2-results__option[aria-selected=true] {
     background-color: #ddd !important; /* Light background for selected option */
     color: #574c49 !important; /* Dark text for selected option */
 }
 
-.select2-container--admin-autocomplete .select2-results__option[aria-selected=true] {
+.select2-container--admin-autocomplete .select2-results__option--highlighted[aria-selected=true] .select2-container--admin-autocomplete .select2-results__option[aria-selected=true] {
     background-color: #ddd !important; /* Light background for selected option */
     color: #574c49 !important; /* Dark text for selected option */
 }
@@ -1030,7 +1030,7 @@ button, input, optgroup, select, textarea {
     line-height: inherit
 }
 
-.select2-container--default.select2-container--focus .select2-selection--multiple {
+.select2-container--default .select2-container--focus .select2-selection--multiple {
     border: solid black 3px !important;
     outline: 0;
 }
