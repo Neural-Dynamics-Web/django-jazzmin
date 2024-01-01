@@ -1034,3 +1034,8 @@ button, input, optgroup, select, textarea {
     border: solid black 3px !important;
     outline: 0;
 }
+
+.select2-container--admin-autocomplete .select2-results__option--highlighted[aria-selected] {
+    background-color: #ddd !important; /* Light background for selected option */
+    color: #574c49 !important; /* Dark text for selected option */
+}
