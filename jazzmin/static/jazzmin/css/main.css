@@ -953,7 +953,6 @@ body.jazzmin-login-page {
     padding: 5px !important;
     outline: none !important; /* Removes the default focus outline */
     box-shadow: none !important; /* Removes any box-shadow */
-    display: none;
 }
 
 /* Style for the remove icon within the pills */
