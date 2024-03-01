@@ -11,3 +11,7 @@
     background: #343a40;
     border-radius: 30px;
 }
+
+html {
+    overflow-y: scroll;
+}
